@@ -1,5 +1,6 @@
-# geoserver-
-geoserver CVE-2024-36401 一键漏洞利用工具
+# geoserver CVE-2024-36401 一键漏洞利用工具
+
+geoserver CVE-2024-36401
 
 原本没打算写的，主要是想着直接去搜一下工具，直接用着就OK了
 找到一个geoserver CVE-2024-36401漏洞利用工具
