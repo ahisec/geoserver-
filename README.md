@@ -180,7 +180,7 @@ class java.lang.ProcessImpl cannot be cast to class org.opengis.feature.type.Att
 
 最终我们实现了这个漏洞利用工具的编写
 
-![image](https://github.com/MInggongK/geoserver-/blob/main/dfdsf.png)
+![image](https://github.com/MInggongK/geoserver-/blob/main/dfdsfdf.png)
 
 我们来测试一下漏洞
 
@@ -198,7 +198,7 @@ class java.lang.ProcessImpl cannot be cast to class org.opengis.feature.type.Att
 
 是可以连接的
 
-![image](https://github.com/MInggongK/geoserver-/blob/main/dgdsfdsf1.png)
+
 
 
 
