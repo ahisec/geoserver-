@@ -1,6 +1,8 @@
 # geoserver CVE-2024-36401 漏洞利用工具
 
-geoserver CVE-2024-36401
+geoserver CVE-2024-36401  声明：仅用于授权测试，用户滥用造成的一切后果和作者无关 请遵守法律法规！
+
+工具稍后放出
 
 原本没打算写的，主要是想着直接去搜一下工具，直接用着方便就OK了
 
@@ -210,8 +212,6 @@ class java.lang.ProcessImpl cannot be cast to class org.opengis.feature.type.Att
 ![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/fdgdgds.png)
 
 是可以连接的
-
-工具稍后放出
 
 
 
