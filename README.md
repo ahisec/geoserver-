@@ -199,6 +199,13 @@ class java.lang.ProcessImpl cannot be cast to class org.opengis.feature.type.Att
 
 我们来测试一下漏洞
 
+工具执行效果
+
+![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/fgfggf.png)
+
+![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/dfgdg.png)
+
+
 ![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/dsfsdfsd.png)
 
 我们检测到了漏洞，拿到了端点，反弹shell也成功了
@@ -212,6 +219,7 @@ class java.lang.ProcessImpl cannot be cast to class org.opengis.feature.type.Att
 ![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/fdgdgds.png)
 
 是可以连接的
+
 
 
 
