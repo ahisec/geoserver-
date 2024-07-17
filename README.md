@@ -8,7 +8,7 @@ geoserver CVE-2024-36401
 
 GeoServer 综合漏洞扫描工具V1.2 发布！
 
-![image](https://github.com/MInggongK/geoserver-/blob/main/dsfdsf.png)
+![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/dsfdsf.png)
 
 但是实际使用下来感觉到这个工具稍微有点尴，作者说是go语言写的，速度极快，主要表现是两点
 
@@ -193,21 +193,21 @@ class java.lang.ProcessImpl cannot be cast to class org.opengis.feature.type.Att
 
 最终我们实现了这个漏洞利用工具的编写
 
-![image](https://github.com/MInggongK/geoserver-/blob/main/dfdsfdf.png)
+![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/dfdsfdf.png)
 
 我们来测试一下漏洞
 
-![image](https://github.com/MInggongK/geoserver-/blob/main/dsfsdfsd.png)
+![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/dsfsdfsd.png)
 
 我们检测到了漏洞，拿到了端点，反弹shell也成功了
 
 接下来我们来试试注入内存马
 
-![image](https://github.com/MInggongK/geoserver-/blob/main/gfdgfdg.png)
+![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/gfdgfdg.png)
 
 显示是成功注入内存马，我们来连接看看是否成功
 
-![image](https://github.com/MInggongK/geoserver-/blob/main/fdgdgds.png)
+![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/fdgdgds.png)
 
 是可以连接的
 
