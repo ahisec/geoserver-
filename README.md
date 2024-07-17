@@ -12,17 +12,13 @@ GeoServer 综合漏洞扫描工具V1.2 发布！
 
 ![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/dsfdsf.png)
 
-但是实际使用下来感觉到这个工具稍微有点ga，作者说是go语言写的，速度极快，主要表现是两点
-
-1、闪退，不明原因的闪退，检测都要闪退
-
-2、使用其他工具漏洞是存在的，但是他这个工具不存在，就没明白怎么回事，估计是他的判断逻辑上出了问题
+但是实际使用下来感觉到这个工具稍微有点miti，作者说是go语言写的
 
 那么就想着能不能自己写一个试试
 
 但是发现这个漏洞实际写下来，也没那么简单
 
-那个作者说新版发布了,最新的版本是GeoServer 综合漏洞扫描工具V1.2，实际上发现他的新版也还是那样ga，原因在于，同样的站，他那个工具检测不到漏洞
+那个作者说新版发布了,最新的版本是GeoServer 综合漏洞扫描工具V1.2，实际上发现他的新版也还是那样miti，原因在于，同样的站，他那个工具检测不到漏洞
 
 ![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/fgdsgds.png)
 
