@@ -20,6 +20,17 @@ GeoServer 综合漏洞扫描工具V1.2 发布！
 
 但是发现这个漏洞实际写下来，也没那么简单
 
+那个作者说新版发布了,最新的版本是GeoServer 综合漏洞扫描工具V1.2，实际上发现他的新版也还是那样尴，愿意在于，同样的站，他那个工具根本检测不到漏洞
+
+![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/fgdsgds.png)
+
+![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/dfsfsdf.png)
+
+换成自己写的就可以检测到漏洞
+
+![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/fdgdfg.png)
+
+
 简单说一下编写思路吧
 
 1，默认payload:
