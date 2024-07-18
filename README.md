@@ -202,6 +202,9 @@ class java.lang.ProcessImpl cannot be cast to class org.opengis.feature.type.Att
 
 ![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/fdsfdsf.png)
 
+增加了自定义内存马功能
+
+![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/fdgdsg.png)
 
 
 
