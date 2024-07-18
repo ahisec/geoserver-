@@ -180,7 +180,7 @@ class java.lang.ProcessImpl cannot be cast to class org.opengis.feature.type.Att
 
 ![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/dsfsdfsd.png)
 
-我们检测到了漏洞，拿到了端点，反弹shell也成功了
+发现检测到了漏洞，拿到了端点，反弹shell也成功了
 
 接下来我们来试试注入内存马
 
