@@ -199,6 +199,7 @@ class java.lang.ProcessImpl cannot be cast to class org.opengis.feature.type.Att
 
 ![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/dfgdg.png)
 
+提示：无回显和漏洞输出不存在是一样的，存在漏洞的会提示+号
 
 ![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/dsfsdfsd.png)
 
