@@ -199,7 +199,7 @@ class java.lang.ProcessImpl cannot be cast to class org.opengis.feature.type.Att
 
 提示：无回显和漏洞输出不存在是一样的，存在漏洞的会提示+号
 
-玩法：发现漏洞，反弹到shell，使用viper上线测试，如果可以上线，做一波内网测试
+玩法：发现漏洞，反弹到shell，使用viper，cs上线测试，如果可以上线，做一波内网测试
 
 优化可能会加入自定义内存马，批量检测等功能
 
