@@ -218,7 +218,9 @@ class java.lang.ProcessImpl cannot be cast to class org.opengis.feature.type.Att
 是可以连接的
 
 提示：测试内存马，This GeoServer instance is running version 2.15.2. For more information please contact the 
+
 该版本内存马打入成功
+
 其他的自行测试
 
 ![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/fdsfdsf.png)
