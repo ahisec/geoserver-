@@ -196,6 +196,8 @@ class java.lang.ProcessImpl cannot be cast to class org.opengis.feature.type.Att
 
 该版本内存马打入成功
 
+高版本的可能会失败
+
 其他的自行测试
 
 ![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/fdsfdsf.png)
