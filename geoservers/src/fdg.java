@@ -357,7 +357,7 @@ public class fdg {
             HttpURLConnection connection = (HttpURLConnection) url1.openConnection();
             //  connection.setRequestProperty("User-Agent", "curl/7.77.0");
             connection.setRequestMethod("POST");
-            //    connection.setRequestProperty("Host", "104.199.107.213");
+  
             connection.setRequestProperty("Accept", "*/*");
             connection.setRequestProperty("Content-Type", "application/xml");
             connection.setRequestProperty("User-Agent", "curl/7.77.0");
@@ -449,7 +449,7 @@ public class fdg {
             HttpURLConnection connection = (HttpURLConnection) url1.openConnection();
             //  connection.setRequestProperty("User-Agent", "curl/7.77.0");
             connection.setRequestMethod("POST");
-            // connection.setRequestProperty("Host", "104.199.107.213");
+     
             connection.setRequestProperty("Accept", "*/*");
             connection.setRequestProperty("Content-Type", "application/xml");
             connection.setRequestProperty("User-Agent", "curl/7.77.0");
@@ -547,7 +547,7 @@ public class fdg {
             HttpURLConnection connection = (HttpURLConnection) url1.openConnection();
             //  connection.setRequestProperty("User-Agent", "curl/7.77.0");
             connection.setRequestMethod("POST");
-            // connection.setRequestProperty("Host", "104.199.107.213");
+     
             connection.setRequestProperty("Accept", "*/*");
             connection.setRequestProperty("Content-Type", "application/xml");
             connection.setRequestProperty("User-Agent", "curl/7.77.0");
@@ -692,7 +692,7 @@ public class fdg {
             HttpURLConnection connection = (HttpURLConnection) url1.openConnection();
             //  connection.setRequestProperty("User-Agent", "curl/7.77.0");
             connection.setRequestMethod("POST");
-            // connection.setRequestProperty("Host", "104.199.107.213");
+      
             connection.setRequestProperty("Accept", "*/*");
             connection.setRequestProperty("Content-Type", "application/xml");
             connection.setRequestProperty("User-Agent", "curl/7.77.0");
@@ -795,7 +795,7 @@ public class fdg {
             HttpURLConnection connection = (HttpURLConnection) url1.openConnection();
             //  connection.setRequestProperty("User-Agent", "curl/7.77.0");
             connection.setRequestMethod("POST");
-            // connection.setRequestProperty("Host", "104.199.107.213");
+       
             connection.setRequestProperty("Accept", "*/*");
             connection.setRequestProperty("Content-Type", "application/xml");
             connection.setRequestProperty("User-Agent", "curl/7.77.0");
