@@ -2,31 +2,6 @@
 
 geoserver CVE-2024-36401  环境：JDK8 声明：仅用于授权测试，用户滥用造成的一切后果和作者无关 请遵守法律法规！
 
-原本没打算写的，主要是想着直接去搜一下工具，直接用着方便就OK了
-
-找到一个geoserver CVE-2024-36401漏洞利用工具
-
-GeoServer 综合漏洞扫描工具V1.2 发布！
-
-![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/dsfdsf.png)
-
-但是实际使用下来感觉到这个工具稍微有点miti，作者说是go语言写的
-
-那么就想着能不能自己写一个试试
-
-但是发现这个漏洞实际写下来，也没那么简单
-
-那个作者说新版发布了,最新的版本是GeoServer 综合漏洞扫描工具V1.2，实际上发现他的新版也还是那样miti，原因在于，同样的站，他那个工具检测不到漏洞
-
-![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/fgdsgds.png)
-
-![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/dfsfsdf.png)
-
-换成自己写的就可以检测到漏洞
-
-![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/fdgdfg.png)
-
-
 简单说一下编写思路吧
 
 1，默认payload:
