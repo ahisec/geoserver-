@@ -216,7 +216,7 @@ class java.lang.ProcessImpl cannot be cast to class org.opengis.feature.type.Att
 
 自定义内存马可自行选择tomcat环境进行测试
 
-
+批量版本暂未发布
 
 
 
