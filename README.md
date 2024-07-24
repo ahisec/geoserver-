@@ -204,7 +204,19 @@ class java.lang.ProcessImpl cannot be cast to class org.opengis.feature.type.Att
 
 ![image](https://github.com/MInggongK/geoserver-/blob/main/geoservers/fdgdsg.png)
 
+# 更新日志
 
+加入了ls测试，ping测试
+
+修复内存马注入的问题
+
+加入tomcat和jetty的识别
+
+哥斯拉内存马默认使用jetty环境进行注入
+
+自定义内存马可自行选择tomcat环境进行测试
+
+批量版本暂未发布
 
 
 
